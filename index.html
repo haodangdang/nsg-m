@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ/微信强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <title>不休战队</title>
+    <meta name="description" content="不休战队">
+    <meta name="keywords" content="不休战队">
+    <meta name="wxm:timeline_title" content="不休战队">
+    <meta name="wxm:appmessage_title" content="不休战队">
+    <meta name="wxm:appmessage_desc" content="不休战队">
+    <link rel="stylesheet" href="./css/swiper.min.css" media="all">
+    <link rel="stylesheet" href="./css/style.css" media="all">
+    <script>
+        var ratio = 187.5;
+        if(window.orientation==90||window.orientation==-90) ratio = 333.5
+        document.querySelector('html').style.fontSize = document.documentElement.clientWidth / ratio * 50 + 'px';
+    </script>
+    <style>
+        @font-face {
+            font-family: JDJZONGYI;
+            src: url('./css/ruizi.TTF');
+        }
+        .getfont{
+            font-family: JDJZONGYI;
+            position: absolute;
+            top: -10000rem;
+        }
+    </style>
+</head>
+
+<body>
+<div id="root" class="root">
+    <div class="getfont">f</div>
+    <div class="intro"></div>
+    <div class="top_download">
+        <div class="app_des">
+            <div class="app_icon"><img src="./image/icon.png" alt=""></div>
+            <div class="app_txt">
+                <span class="app_name">不休战队</span><br>
+                <span class="app_slogon">战斗不止 快乐不休</span>
+            </div>
+        </div>
+        <div class="app_download"></div>
+    </div>
+    <div class="page_warp">
+        <!-- <div class="pagebox page1">
+            <div class="logo"><img src="./image/logo.png" alt=""></div>
+            <div class="intro_play_btn"></div>
+            <div class="download"></div>
+            <div id="homePlay" class="play_btn" loops="0" clearsAfterStop="true"></div>
+        </div> -->
+        <!-- <div class="pagebox page2">
+            <div class="page_content">
+                <div class="page_title">
+                    英雄<span class="des">介绍</span> 
+                </div>
+                <div class="hero_list">
+                    <div class="hero_box swiper-wrapper">
+                        <div class="hero_item hero_1 swiper-slide">
+                            <div class="hero_box">
+                            </div>
+                        </div>
+                        <div class="hero_item hero_2 swiper-slide">
+                            <div class="hero_box">
+                            </div>
+                        </div>
+                        <div class="hero_item hero_1 swiper-slide">3</div>
+                        <div class="hero_item hero_2 swiper-slide">4</div>
+                        <div class="hero_item hero_1 swiper-slide">5</div>
+                    </div>
+                </div>
+                <div class="hero_head_wrap">
+                    <div class="hero_head">
+                        <div class="hero_head_list swiper-wrapper">
+                            <div class="head_item hero_1 swiper-slide">
+                                <div class="hero_avtor"><img src="./image/hero/head1.png" alt=""></div>
+                            </div>
+                            <div class="head_item hero_2 swiper-slide">
+                                <div class="hero_avtor"><img src="./image/hero/head2.png" alt=""></div>
+                            </div>
+                            <div class="head_item hero_3 swiper-slide">
+                                <div class="hero_avtor"><img src="./image/hero/head3.png" alt=""></div>
+                            </div>
+                            <div class="head_item hero_4 swiper-slide">
+                                <div class="hero_avtor"><img src="./image/hero/head4.png" alt=""></div>
+                            </div>
+                            <div class="head_item hero_5 swiper-slide">
+                                <div class="hero_avtor"><img src="./image/hero/head5.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="pagebox page3">
+            <div class="page_content">
+                <div class="page_title">
+                    游戏<span class="feature">特色</span>
+                </div>
+                <div class="feature_list">
+                    <div class="game_box swiper-wrapper">
+                        <div class="game_item swiper-slide">
+                            <img src="./image/feature/feature1.jpg" alt="">
+                        </div>
+                        <div class="game_item swiper-slide">
+                            <img src="./image/feature/feature2.jpg" alt="">
+                        </div>
+                        <div class="game_item swiper-slide">
+                            <img src="./image/feature/feature3.jpg" alt="">
+                        </div>
+                        <div class="game_item swiper-slide">
+                            <img src="./image/feature/feature4.jpg" alt="">
+                        </div>
+                        <div class="game_item swiper-slide">
+                            <img src="./image/feature/feature5.jpg" alt="">
+                        </div>
+                        <div class="game_item swiper-slide">
+                            <img src="./image/feature/feature6.jpg" alt="">
+                        </div>
+                        <div class="game_item swiper-slide">
+                            <img src="./image/feature/feature7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="feature_title">
+                    <div class="feature_title_item active">丰富玩法</div>
+                    <div class="feature_title_item">全球PVP</div>
+                    <div class="feature_title_item">迷宫探险</div>
+                    <div class="feature_title_item">多元副本</div>
+                    <div class="feature_title_item">多样世界</div>
+                    <div class="feature_title_item">海量英雄</div>
+                    <div class="feature_title_item">轻松挂机</div>
+                </div>
+                <div class="page_title page_wechat_title">
+                    更多资讯请关注
+                </div>
+                <div class="wechat_qr">
+                    <img src="./image/wechat.jpg" alt="">
+                    <span>官方微信</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="//libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/svgaplayerweb@2.3.1/build/svga.min.js"></script>
+<script src="./js/lib/swiper.min.js"></script>
+<script src="./js/main.js"></script>
+
+</body>
+</html>
+<script>
+
+</script>
