@@ -93,6 +93,9 @@ var main = {
 		$('.app_download, .download').on('click', function () {
 			self.showDownloadModal();
 		});
+		$('.cancel_download').on('click', function () {
+			self.hideDownloadModal();
+		})
 	},
 	showDownloadModal: function () {
 		$('.download_modal').show();
