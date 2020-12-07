@@ -1,11 +1,20 @@
 var main = {
 	gameSwiper: null,
+	gameVideo: null,
 	init: function () {
+		this.initDownload();
 		this.initPage();
 		this.bind();
 		this.initHero();
 		this.initFeature();
-		this.initHomePlayBtn();
+	},
+	initDownload: function () {
+		var self = this;
+		if(!self.isWeixin()){
+			$('.app_download, .download').attr('href', 'http://cdnspdl.arkofwar.com/download/idle-cn/com.sevenpirates.idle.apk');
+		}else{
+			$('.app_download, .download').attr('href','javascript:void(0)');
+		}
 	},
 	initPage: function () {
 		var self = this;
@@ -17,24 +26,41 @@ var main = {
         	freeModeSticky : true,
 	        on: {
 	        	slideChangeTransitionStart: function () {
+	        		console.log('---this.activeIndex---', this.activeIndex);
+	        		if(this.activeIndex == 1){
+	        			$('.page_title').show();
+	        		}
 	        		$('.nav_item').removeClass('current');
 	        		$('.nav_item').eq(this.activeIndex).addClass('current');
 	            }
 	        }
 		}); 
 	},
-	initHomePlayBtn: function () {
-		var player = new SVGA.Player('#homePlay');
-		var parser = new SVGA.Parser('#homePlay'); 
-		parser.load('./svga/playbtn.svga', function(videoItem) {
-		    player.setVideoItem(videoItem);
-		    player.startAnimation();
-		})
+	playGameVideo: function (index) {
+		var self = this;
+		if(!self.gameVideo){
+			self.gameVideo = videojs('game_video',{
+				controls : true,
+				controlBar: {
+					pictureInPictureToggle: false
+				}
+			});
+		}
+		
+		var data = {
+		    src: 'https://imgs.it2048.cn/nsg/common/gamevideo/video'+index+'.mp4',
+		    type: 'video/mp4'
+		};
+		self.gameVideo.pause();
+		self.gameVideo.src(data);
+		self.gameVideo.load(data);
+		self.gameVideo.play();
+		$('.video_modal').show();
 	},
 	initHero: function () {
 		var heroSwiper = new Swiper ('.hero_list', {
 		    autoplay: {
-	            delay: 5000,
+	            delay: 6000,
 	            disableOnInteraction: false
 	        },
 	        loop: true,
@@ -95,10 +121,28 @@ var main = {
 		});
 		$('.cancel_download').on('click', function () {
 			self.hideDownloadModal();
+		});
+		$('.video_btn').on('click', function () {
+			var id = $(this).data('id');
+			self.playGameVideo(id);
+		});
+		$('.close_video').on('click', function () {
+			self.gameVideo.pause();
+			$('.video_modal').hide();
 		})
 	},
+	isWeixin: function () {
+		var ua = window.navigator.userAgent.toLowerCase();
+		if(ua.match(/MicroMessenger/i) == 'micromessenger' || ua.match(/_SQ_/i) == '_sq_'){
+		 	return true;
+		} else{
+		  	return false;
+		}
+	},
 	showDownloadModal: function () {
-		$('.download_modal').show();
+		if(this.isWeixin()){
+			$('.download_modal').show();
+		}
 	},
 	hideDownloadModal: function () {
 		$('.download_modal').hide();

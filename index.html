@@ -15,9 +15,14 @@
     <meta name="wxm:timeline_title" content="不休战队">
     <meta name="wxm:appmessage_title" content="不休战队">
     <meta name="wxm:appmessage_desc" content="不休战队">
-    <link rel="stylesheet" href="./css/swiper.min.css" media="all">
+    <link href="https://imgs.it2048.cn/nsg/common/lib/swiper.min.css" rel="stylesheet" />
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" media="all">
     <script>
+        // 跳转pc端
+        if (!(/mobile/i.test(navigator.userAgent) && !/ipad/i.test(navigator.userAgent))) {
+            location.href = "//egg.it2048.cn/nsg/pc"
+        }
         var ratio = 187.5;
         if(window.orientation==90||window.orientation==-90) ratio = 333.5
         document.querySelector('html').style.fontSize = document.documentElement.clientWidth / ratio * 50 + 'px';
@@ -25,7 +30,7 @@
     <style>
         @font-face {
             font-family: JDJZONGYI;
-            src: url('./css/ruizi.TTF');
+            src: url('https://imgs.it2048.cn/nsg/common/font/JDJHCU.TTF');
         }
         .getfont{
             font-family: JDJZONGYI;
@@ -41,24 +46,30 @@
     <div class="intro"></div>
     <div class="top_download">
         <div class="app_des">
-            <div class="app_icon"><img src="./image/icon.png" alt=""></div>
+            <div class="app_icon"><img src="https://imgs.it2048.cn/nsg/m/image/icon.png" alt=""></div>
             <div class="app_txt">
                 <span class="app_name">不休战队</span><br>
                 <span class="app_slogon">战斗不止 快乐不休</span>
             </div>
         </div>
-        <div class="app_download"></div>
+        <a class="app_download"></a>
     </div>
     <div class="download_modal">
         <div class="cancel_download">取消</div>
     </div>
+    <div class="video_modal">
+        <div class="video_box">
+            <video id="game_video" controls class="game_video video-js vjs-default-skin vjs-big-play-centered" src=""></video>
+            <div class="close_video"><img src="https://imgs.it2048.cn/nsg/m/image/hide_modal.png" alt=""></div>
+        </div>
+    </div>
     <div class="page_warp">
         <div class="page_box swiper-wrapper ">
             <div class="pagebox page1 swiper-slide">
-                <div class="logo"><img src="./image/logo.png" alt=""></div>
+                <div class="logo"><img src="https://imgs.it2048.cn/nsg/m/image/logo.png" alt=""></div>
                 <div class="intro_play_btn"></div>
-                <div class="download"></div>
-                <div id="homePlay" class="play_btn" loops="0" clearsAfterStop="true"></div>
+                <a class="download"></a>
+                <div id="homePlay" class="play_btn video_btn"  src="https://imgs.it2048.cn/nsg/common/svga/playbtn.svga" data-id="home" loops="0" clearsAfterStop="true"></div>
             </div>
             <div class="pagebox page2 swiper-slide">
                 <div class="page_content">
@@ -67,39 +78,65 @@
                     </div>
                     <div class="hero_list">
                         <div class="hero_box swiper-wrapper">
+                            <div class="hero_item hero_0 swiper-slide">
+                                <div class="hero_box">
+                                    
+                                    <div class="hero_des">
+                                        <img src="https://imgs.it2048.cn/nsg/m/image/hero/hero_des_0.png" alt="">
+                                    </div>
+                                    <div class="hero_play"  src="https://imgs.it2048.cn/nsg/common/svga/hero_0.svga"  id="hero_0" loop="0" clearsAfterStop="true"></div>
+                                    <div class="hero_video video_btn" data-id="0" src="https://imgs.it2048.cn/nsg/common/svga/playbtn.svga"  loops="0" clearsAfterStop="true"></div>
+
+                                </div>
+                            </div>
                             <div class="hero_item hero_1 swiper-slide">
                                 <div class="hero_box">
+                                    <div class="hero_des">
+                                        <img src="https://imgs.it2048.cn/nsg/m/image/hero/hero_des_1.png" alt="">
+                                    </div>
+                                    <div class="hero_play"  src="https://imgs.it2048.cn/nsg/common/svga/hero_1.svga"  id="hero_1" loop="0" clearsAfterStop="true"></div>
+                                    <div class="hero_video video_btn" data-id="1" src="https://imgs.it2048.cn/nsg/common/svga/playbtn.svga"  loops="0" clearsAfterStop="true"></div>
                                 </div>
                             </div>
                             <div class="hero_item hero_2 swiper-slide">
                                 <div class="hero_box">
+                                    <div class="hero_des">
+                                        <img src="https://imgs.it2048.cn/nsg/m/image/hero/hero_des_2.png" alt="">
+                                    </div>
+                                    <div class="hero_play"  src="https://imgs.it2048.cn/nsg/common/svga/hero_2.svga"  id="hero_2" loop="0" clearsAfterStop="true"></div>
+                                    <div class="hero_video video_btn" data-id="2" src="https://imgs.it2048.cn/nsg/common/svga/playbtn.svga"  loops="0" clearsAfterStop="true"></div>
                                 </div>
                             </div>
-                            <div class="hero_item hero_1 swiper-slide">3</div>
-                            <div class="hero_item hero_2 swiper-slide">4</div>
-                            <div class="hero_item hero_1 swiper-slide">5</div>
+                            <div class="hero_item hero_3 swiper-slide">
+                                <div class="hero_box">
+                                    <div class="hero_des">
+                                        <img src="https://imgs.it2048.cn/nsg/m/image/hero/hero_des_3.png" alt="">
+                                    </div>
+                                    <div class="hero_play"  src="https://imgs.it2048.cn/nsg/common/svga/hero_3.svga"  id="hero_3" loop="0" clearsAfterStop="true"></div>
+                                    <div class="hero_video video_btn" data-id="3" src="https://imgs.it2048.cn/nsg/common/svga/playbtn.svga"  loops="0" clearsAfterStop="true"></div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                     <div class="hero_head_wrap">
                         <div class="hero_head">
                             <div class="hero_head_list swiper-wrapper">
-                                <div class="head_item hero_1 swiper-slide">
-                                    <div class="hero_avtor"><img src="./image/hero/head1.png" alt=""></div>
+                                <div class="head_item swiper-slide">
+                                    <div class="hero_avtor"><img src="https://imgs.it2048.cn/nsg/m/image/hero/head1.png" alt=""></div>
                                 </div>
-                                <div class="head_item hero_2 swiper-slide">
-                                    <div class="hero_avtor"><img src="./image/hero/head2.png" alt=""></div>
+                                <div class="head_item swiper-slide">
+                                    <div class="hero_avtor"><img src="https://imgs.it2048.cn/nsg/m/image/hero/head2.png" alt=""></div>
                                 </div>
-                                <div class="head_item hero_3 swiper-slide">
-                                    <div class="hero_avtor"><img src="./image/hero/head3.png" alt=""></div>
+                                <div class="head_item swiper-slide">
+                                    <div class="hero_avtor"><img src="https://imgs.it2048.cn/nsg/m/image/hero/head3.png" alt=""></div>
                                 </div>
-                                <div class="head_item hero_4 swiper-slide">
-                                    <div class="hero_avtor"><img src="./image/hero/head4.png" alt=""></div>
-                                </div>
-                                <div class="head_item hero_5 swiper-slide">
-                                    <div class="hero_avtor"><img src="./image/hero/head5.png" alt=""></div>
+                                <div class="head_item swiper-slide">
+                                    <div class="hero_avtor"><img src="https://imgs.it2048.cn/nsg/m/image/hero/head4.png" alt=""></div>
                                 </div>
                             </div>
                         </div>
+                        <div class="hero_bottom"></div>
                     </div>
                 </div>
             </div>
@@ -111,25 +148,25 @@
                     <div class="feature_list">
                         <div class="game_box swiper-wrapper">
                             <div class="game_item swiper-slide">
-                                <img src="./image/feature/feature1.jpg" alt="">
+                                <img src="https://imgs.it2048.cn/nsg/common/feature/feature1.jpg" alt="">
                             </div>
                             <div class="game_item swiper-slide">
-                                <img src="./image/feature/feature2.jpg" alt="">
+                                <img src="https://imgs.it2048.cn/nsg/common/feature/feature2.jpg" alt="">
                             </div>
                             <div class="game_item swiper-slide">
-                                <img src="./image/feature/feature3.jpg" alt="">
+                                <img src="https://imgs.it2048.cn/nsg/common/feature/feature3.jpg" alt="">
                             </div>
                             <div class="game_item swiper-slide">
-                                <img src="./image/feature/feature4.jpg" alt="">
+                                <img src="https://imgs.it2048.cn/nsg/common/feature/feature4.jpg" alt="">
                             </div>
                             <div class="game_item swiper-slide">
-                                <img src="./image/feature/feature5.jpg" alt="">
+                                <img src="https://imgs.it2048.cn/nsg/common/feature/feature5.jpg" alt="">
                             </div>
                             <div class="game_item swiper-slide">
-                                <img src="./image/feature/feature6.jpg" alt="">
+                                <img src="https://imgs.it2048.cn/nsg/common/feature/feature6.jpg" alt="">
                             </div>
                             <div class="game_item swiper-slide">
-                                <img src="./image/feature/feature7.jpg" alt="">
+                                <img src="https://imgs.it2048.cn/nsg/common/feature/feature7.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -146,7 +183,7 @@
                         更多资讯请关注
                     </div>
                     <div class="wechat_qr">
-                        <img src="./image/wechat.jpg" alt="">
+                        <img src="https://imgs.it2048.cn/nsg/m/image/wechat.jpg" alt="">
                         <span>官方微信</span>
                     </div>
                 </div>
@@ -157,7 +194,8 @@
 
 <script src="//libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/svgaplayerweb@2.3.1/build/svga.min.js"></script>
-<script src="./js/lib/swiper.min.js"></script>
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+<script src="https://imgs.it2048.cn/nsg/common/lib/swiper.min.js"></script>
 <script src="./js/main.js"></script>
 
 </body>
