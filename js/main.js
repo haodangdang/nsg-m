@@ -26,7 +26,6 @@ var main = {
         	freeModeSticky : true,
 	        on: {
 	        	slideChangeTransitionStart: function () {
-	        		console.log('---this.activeIndex---', this.activeIndex);
 	        		if(this.activeIndex == 1){
 	        			$('.page_title').show();
 	        		}
@@ -48,7 +47,7 @@ var main = {
 		}
 		
 		var data = {
-		    src: 'https://imgs.it2048.cn/nsg/common/gamevideo/video'+index+'.mp4',
+		    src: '//nsg.bigkraken.com/res/common/gamevideo/video'+index+'.mp4',
 		    type: 'video/mp4'
 		};
 		self.gameVideo.pause();
@@ -60,7 +59,7 @@ var main = {
 	initHero: function () {
 		var heroSwiper = new Swiper ('.hero_list', {
 		    autoplay: {
-	            delay: 6000,
+	            delay: 600000,
 	            disableOnInteraction: false
 	        },
 	        loop: true,
