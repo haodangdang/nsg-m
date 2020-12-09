@@ -49,7 +49,7 @@ var main = {
 		}
 		
 		var data = {
-		    src: '//nsg.bigkraken.com/res/common/gamevideo/video'+index+'.mp4',
+		    src: 'https://imgs.it2048.cn/nsg/common/gamevideo/video'+index+'.mp4',
 		    type: 'video/mp4'
 		};
 		self.gameVideo.pause();
