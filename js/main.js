@@ -26,8 +26,10 @@ var main = {
         	freeModeSticky : true,
 	        on: {
 	        	slideChangeTransitionStart: function () {
-	        		if(this.activeIndex == 1){
-	        			$('.page_title').show();
+	        		if(this.activeIndex > 0){
+	        			$('.arrow_wrap').hide();
+	        		}else {
+	        			$('.arrow_wrap').show();
 	        		}
 	        		$('.nav_item').removeClass('current');
 	        		$('.nav_item').eq(this.activeIndex).addClass('current');

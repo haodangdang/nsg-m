@@ -44,6 +44,46 @@ body,button,input,select,textarea {
 	width: 1.02rem;
 	height: 1.02rem;
 }
+.arrow_wrap{
+  position: absolute;
+	bottom: 0.05rem;
+	left: 50%;
+	font-size: 0.12rem;
+	color: #000;
+	transform: translate(-50%);
+	z-index: 500;
+}
+.arrow{
+  position: absolute;
+    display: block;
+    width: 0.69rem;
+    height: 0.475rem;
+    animation: next 2s infinite;
+    transform: scale(0.5);
+}
+@keyframes next {
+    0% {
+        opacity: 1;
+        bottom: 0.2rem;
+    }
+    100% {
+        opacity: 0;
+        bottom: -0.1rem;
+    }
+}
+.copyright{
+  position: absolute;
+    font-size: 0.1rem;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    bottom: 0.02rem;
+    line-height: 0.14rem;
+}
+.copyright a{
+  color: #fff;
+  text-decoration: none;
+}
 .video_modal{
 	display: none;
 	position: absolute;
@@ -171,7 +211,7 @@ body,button,input,select,textarea {
 	color: #01f0ff;
 }
 .page1{
-	background: url(../image/intro_bg.png) center bottom;
+	background: url(https://imgs.it2048.cn/nsg/m/image/intro/intro_bg.png) center bottom;
 	background-size: cover;
 }
 .page1 .logo{
@@ -190,8 +230,7 @@ body,button,input,select,textarea {
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%);
-	bottom: 0.23rem;
-
+	bottom: 0.26rem;
 }
 .page1 .play_btn{
 	position: absolute;
@@ -303,31 +342,39 @@ body,button,input,select,textarea {
 }
 #hero_0{
 	width: 2.91rem;
-	height: 4.205rem;
+	height: 4.215rem;
 	left: 0.675rem;
 	/*top: 2.3rem;*/
-	bottom: 0.35rem;
+	bottom: 0.185rem;
+	background: url(https://imgs.it2048.cn/nsg/m/image/heroimage/hero0.png) center no-repeat;
+  	background-size: contain;
 }
 #hero_1{
-	width: 3.2rem;
-    height: 4.78rem;
-    left: 0.315rem;
+	width: 2.815rem;
+	height: 4.435rem;
+    left: 0.5rem;
     /*top: 1.93rem;*/
-    bottom: 0rem;
+    bottom: 0.185rem;
+    background: url(https://imgs.it2048.cn/nsg/m/image/heroimage/hero1.png) center no-repeat;
+  	background-size: contain;
 }
 #hero_2{
-	width: 2.595rem;
-	height: 4.265rem;
+	width: 2.67rem;
+	height: 4.385rem;
 	left: 0.85rem;
 	/*top: 2.08rem;*/
-	bottom: 0.35rem;
+	bottom: 0.185rem;
+	background: url(https://imgs.it2048.cn/nsg/m/image/heroimage/hero2.png) center no-repeat;
+  	background-size: contain;
 }
 #hero_3{
-	width: 5.855rem;
-    height: 5.008rem;
+	width: 5.26rem;
+    height: 4.625rem;
     left: -0.855rem;
     /*top: 1.59rem;*/
-    bottom: 0.15rem;
+    bottom: 0.185rem;
+    background: url(https://imgs.it2048.cn/nsg/m/image/heroimage/hero3.png) center no-repeat;
+  	background-size: contain;
 }
 .hero_video{
 	width: 0.8rem;
