@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="./css/style.css" media="all">
     <script>
         // 跳转pc端
-        if (!(/mobile/i.test(navigator.userAgent) && !/ipad/i.test(navigator.userAgent))) {
-            location.href = "https://imgs.it2048.cn/nsg/web/pc/index.html"
-        }
+        // if (!(/mobile/i.test(navigator.userAgent) && !/ipad/i.test(navigator.userAgent))) {
+            // location.href = "https://imgs.it2048.cn/nsg/web/pc/index.html"
+        // }
         var ratio = 187.5;
         if(window.orientation==90||window.orientation==-90) ratio = 333.5
         document.querySelector('html').style.fontSize = document.documentElement.clientWidth / ratio * 50 + 'px';
@@ -55,7 +55,7 @@
         <a class="app_download"></a>
     </div>
     <div class="download_modal">
-        <!-- <div class="cancel_download">取消</div> -->
+        iOS端敬请期待！
     </div>
     <div class="arrow_wrap">
         <img class="arrow" src="https://imgs.it2048.cn/nsg/m/image/arrow.png" alt="">
@@ -84,43 +84,46 @@
                         <div class="hero_box swiper-wrapper">
                             <div class="hero_item hero_0 swiper-slide">
                                 <div class="hero_box">
-                                    <div class="hero_des">
-                                        <img src="https://imgs.it2048.cn/nsg/m/image/hero/hero_des_0.png" alt="">
+                                    <div class="hero_box_item">
+                                        <div class="hero_des">
+                                            <img src="https://imgs.it2048.cn/nsg/m/image/hero/hero_des_0.png" alt="">
+                                        </div>
+                                        <div class="hero_play" id="hero_0"></div>
+                                        <div class="hero_video video_btn" data-id="0" src="https://imgs.it2048.cn/nsg/common/svga/playbtn.svga"  loops="0" clearsAfterStop="true"></div>
                                     </div>
-                                    <!-- <div class="hero_play"  src="https://imgs.it2048.cn/nsg/common/svga/hero_0.svga"  id="hero_0" loop="0" clearsAfterStop="true"></div> -->
-                                    <div class="hero_play" id="hero_0"></div>
-                                    <div class="hero_video video_btn" data-id="0" src="https://imgs.it2048.cn/nsg/common/svga/playbtn.svga"  loops="0" clearsAfterStop="true"></div>
-
                                 </div>
                             </div>
                             <div class="hero_item hero_1 swiper-slide">
                                 <div class="hero_box">
-                                    <div class="hero_des">
-                                        <img src="https://imgs.it2048.cn/nsg/m/image/hero/hero_des_1.png" alt="">
+                                    <div class="hero_box_item">
+                                        <div class="hero_des">
+                                            <img src="https://imgs.it2048.cn/nsg/m/image/hero/hero_des_1.png" alt="">
+                                        </div>
+                                        <div class="hero_play" id="hero_1"></div>
+                                        <div class="hero_video video_btn" data-id="1" src="https://imgs.it2048.cn/nsg/common/svga/playbtn.svga"  loops="0" clearsAfterStop="true"></div>
                                     </div>
-                                    <!-- <div class="hero_play"  src="https://imgs.it2048.cn/nsg/common/svga/hero_1.svga"  id="hero_1" loop="0" clearsAfterStop="true"></div> -->
-                                    <div class="hero_play" id="hero_1"></div>
-                                    <div class="hero_video video_btn" data-id="1" src="https://imgs.it2048.cn/nsg/common/svga/playbtn.svga"  loops="0" clearsAfterStop="true"></div>
                                 </div>
                             </div>
                             <div class="hero_item hero_2 swiper-slide">
                                 <div class="hero_box">
-                                    <div class="hero_des">
-                                        <img src="https://imgs.it2048.cn/nsg/m/image/hero/hero_des_2.png" alt="">
+                                    <div class="hero_box_item">
+                                        <div class="hero_des">
+                                            <img src="https://imgs.it2048.cn/nsg/m/image/hero/hero_des_2.png" alt="">
+                                        </div>
+                                        <div class="hero_play" id="hero_2"></div>
+                                        <div class="hero_video video_btn" data-id="2" src="https://imgs.it2048.cn/nsg/common/svga/playbtn.svga"  loops="0" clearsAfterStop="true"></div>
                                     </div>
-                                    <!-- <div class="hero_play"  src="https://imgs.it2048.cn/nsg/common/svga/hero_2.svga"  id="hero_2" loop="0" clearsAfterStop="true"></div> -->
-                                    <div class="hero_play" id="hero_2"></div>
-                                    <div class="hero_video video_btn" data-id="2" src="https://imgs.it2048.cn/nsg/common/svga/playbtn.svga"  loops="0" clearsAfterStop="true"></div>
                                 </div>
                             </div>
                             <div class="hero_item hero_3 swiper-slide">
                                 <div class="hero_box">
-                                    <div class="hero_des">
-                                        <img src="https://imgs.it2048.cn/nsg/m/image/hero/hero_des_3.png" alt="">
+                                    <div class="hero_box_item">
+                                        <div class="hero_des">
+                                            <img src="https://imgs.it2048.cn/nsg/m/image/hero/hero_des_3.png" alt="">
+                                        </div>
+                                        <div class="hero_play" id="hero_3"></div>
+                                        <div class="hero_video video_btn" data-id="3" src="https://imgs.it2048.cn/nsg/common/svga/playbtn.svga"  loops="0" clearsAfterStop="true"></div>
                                     </div>
-                                    <!-- <div class="hero_play"  src="https://imgs.it2048.cn/nsg/common/svga/hero_3.svga"  id="hero_3" loop="0" clearsAfterStop="true"></div> -->
-                                    <div class="hero_play" id="hero_3"></div>
-                                    <div class="hero_video video_btn" data-id="3" src="https://imgs.it2048.cn/nsg/common/svga/playbtn.svga"  loops="0" clearsAfterStop="true"></div>
                                 </div>
                             </div>
                         </div>
@@ -227,6 +230,3 @@
 
 </body>
 </html>
-<script>
-
-</script>

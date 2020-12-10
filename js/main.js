@@ -6,15 +6,19 @@ var main = {
 		this.initPage();
 		this.bind();
 		this.initHero();
+		this.initHeroSize();
 		this.initFeature();
 	},
 	initDownload: function () {
 		var self = this;
-		if(!self.isWeixin()){
-			$('.app_download, .download').attr('href', 'http://cdnspdl.arkofwar.com/download/idle-cn/com.sevenpirates.idle.apk');
+		var u = navigator.userAgent,
+			isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+		if(!isiOS){
+			$('.app_download, .download').attr('href', './download.html');
 		}else{
-			$('.app_download, .download').attr('href','javascript:void(0)');
+			$('.app_download, .download').attr('href', 'javascript:void(0)');
 		}
+		
 	},
 	initPage: function () {
 		var self = this;
@@ -57,6 +61,19 @@ var main = {
 		self.gameVideo.load(data);
 		self.gameVideo.play();
 		$('.video_modal').show();
+	},
+	initHeroSize: function () {
+		var sh = document.body.clientHeight;
+		var h = 736;
+		if(sh < h){
+			var scale = sh/h;
+			var moveX = 50 / scale;
+			var dom = document.querySelectorAll('.hero_box_item');
+			for (i = 0; i < dom.length; i++) {
+				dom[i].style.transform =  `scale(${scale})`;
+			}
+		}
+		
 	},
 	initHero: function () {
 		var heroSwiper = new Swiper ('.hero_list', {
@@ -141,9 +158,10 @@ var main = {
 		}
 	},
 	showDownloadModal: function () {
-		if(this.isWeixin()){
-			$('.download_modal').show();
-		}
+		$('.download_modal').fadeIn();
+		setTimeout(function () {
+			$('.download_modal').fadeOut();
+		},2000)
 	},
 	hideDownloadModal: function () {
 		$('.download_modal').hide();
