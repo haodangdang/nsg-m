@@ -73,12 +73,12 @@ body,button,input,select,textarea {
 }
 .copyright{
   position: absolute;
-    font-size: 0.1rem;
+    font-size: 0.08rem;
     text-align: center;
     color: #fff;
     width: 100%;
-    bottom: 0.02rem;
-    line-height: 0.14rem;
+    bottom: 0rem;
+    line-height: 0.1rem;
 }
 .copyright a{
   color: #fff;
