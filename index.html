@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="./css/style.css" media="all">
     <script>
         // 跳转pc端
-        // if (!(/mobile/i.test(navigator.userAgent) && !/ipad/i.test(navigator.userAgent))) {
-            // location.href = "https://imgs.it2048.cn/nsg/web/pc/index.html"
-        // }
+        if (!(/mobile/i.test(navigator.userAgent) && !/ipad/i.test(navigator.userAgent))) {
+            location.href = "https://imgs.it2048.cn/nsg/web/pc/index.html"
+        }
         var ratio = 187.5;
         if(window.orientation==90||window.orientation==-90) ratio = 333.5
         document.querySelector('html').style.fontSize = document.documentElement.clientWidth / ratio * 50 + 'px';
