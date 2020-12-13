@@ -2,12 +2,14 @@ var main = {
 	gameSwiper: null,
 	gameVideo: null,
 	init: function () {
-		this.initDownload();
-		this.initPage();
-		this.bind();
-		this.initHero();
-		this.initHeroSize();
-		this.initFeature();
+		var self = this;
+		self.initDownload();
+		self.initPage();
+		self.bind();
+		self.initHero();
+		self.initHeroSize();
+		self.initHeroFly();
+		self.initFeature();
 	},
 	initDownload: function () {
 		var self = this;
@@ -78,7 +80,7 @@ var main = {
 	initHero: function () {
 		var heroSwiper = new Swiper ('.hero_list', {
 		    autoplay: {
-	            delay: 600000,
+	            delay: 6000,
 	            disableOnInteraction: false
 	        },
 	        loop: true,
@@ -148,6 +150,152 @@ var main = {
 			self.gameVideo.pause();
 			$('.video_modal').hide();
 		})
+	},
+	initHeroFly: function () {
+		new particleCanvas(
+        "hero_particle",
+        [
+            {
+                // 鏉愭枡
+                "type": {
+                    "typeName": "image",
+					"url": "https://imgs.it2048.cn/nsg/pc/image/fire/2.png"
+                },
+                // 鏁伴噺
+                "number": 8,
+                // 灏哄
+                "size": {
+                    "min": 30,
+                    "max": 80
+                },
+                // 閫熷害
+                "speed": {
+                    "min": 2,
+                    "max": 12
+                },
+                // 鍋忕Щ(杩愬姩)瑙掑害
+                "angle": {
+                    "value": 160,
+                    "float": 10
+                },
+                // 鏃嬭浆
+                "rota": {
+                    "value": 15,
+                    "speed": 0.1,
+                    "floatValue": 1,
+                    "floatSpeed": 0.2
+                },
+                "area": {
+                    "leftTop": [1300, 100],
+                    "rightBottom": [1900, 300]
+                },
+            },
+            {
+                // 鏉愭枡
+                "type": {
+                    "typeName": "image",
+					"url": "https://imgs.it2048.cn/nsg/pc/image/fire/1.png"
+                },
+                // 鏁伴噺
+                "number": 4,
+                // 灏哄
+                "size": {
+                    "min": 60,
+                    "max": 80
+                },
+                // 閫熷害
+                "speed": {
+                    "min": 2,
+                    "max": 5
+                },
+                // 鍋忕Щ(杩愬姩)瑙掑害
+                "angle": {
+                    "value": 160,
+                    "float": 5
+                },
+                // 鏃嬭浆
+                "rota": {
+                    "value": 10,
+                    "speed": 0.1,
+                    "floatValue": 10,
+                    "floatSpeed": 0.3
+                },
+                "area": {
+                    "leftTop": [200, 600],
+                    "rightBottom": [500, 1000]
+                },
+            },
+            {
+                // 鏉愭枡
+                "type": {
+                    "typeName": "image",
+					"url": "https://imgs.it2048.cn/nsg/pc/image/fire/4.png"
+                },
+                // 鏁伴噺
+                "number": 2,
+                // 灏哄
+                "size": {
+                    "min": 360,
+                    "max": 380
+                },
+                // 閫熷害
+                "speed": {
+                    "min": 5,
+                    "max": 7
+                },
+                // 鍋忕Щ(杩愬姩)瑙掑害
+                "angle": {
+                    "value": 170,
+                    "float": 5
+                },
+                // 鏃嬭浆
+                "rota": {
+                    "value": 30,
+                    "speed": 0.5,
+                    "floatValue": 10,
+                    "floatSpeed": 0.3
+                },
+                "area": {
+                    "leftTop": [1000, 600],
+                    "rightBottom": [1000, 800]
+                },
+            },
+            {
+                // 鏉愭枡
+                "type": {
+                    "typeName": "image",
+					"url": "https://imgs.it2048.cn/nsg/pc/image/fire/3.png"
+                },
+                // 鏁伴噺
+                "number": 6,
+                // 灏哄
+                "size": {
+                    "min": 10,
+                    "max": 30
+                },
+                // 閫熷害
+                "speed": {
+                    "min": 2,
+                    "max": 4
+                },
+                // 鍋忕Щ(杩愬姩)瑙掑害
+                "angle": {
+                    "value": 160,
+                    "float": 10
+                },
+                // 鏃嬭浆
+                "rota": {
+                    "value": 3,
+                    "speed": 0.1,
+                    "floatValue": 1,
+                    "floatSpeed": 0.2
+                },
+                "area": {
+                    "leftTop": [1000, 100],
+                    "rightBottom": [1500, 300]
+                },
+            },
+        ]);
 	},
 	isWeixin: function () {
 		var ua = window.navigator.userAgent.toLowerCase();

@@ -71,12 +71,13 @@
                 isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
                 urls = {
                     'android':'http://cdnspdl.arkofwar.com/download/idle-cn/com.sevenpirates.idle.apk',
-                    'other':'http://nsg.bigkraken.com'
+                    'other':'https://imgs.it2048.cn/nsg/web/m/index.html'
                 };
             if(isAndroid){
                 window.location.href=urls.android;
             }else{
-                window.location.href=urls.other;
+                // window.location.href=urls.other;
+                location.replace(urls.other); 
             }
         }
         downApp();
