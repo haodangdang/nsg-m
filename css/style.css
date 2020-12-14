@@ -229,6 +229,28 @@ body,button,input,select,textarea {
 .page_title .feature{
 	color: #01f0ff;
 }
+.page_title_des{
+	width: 3.27rem;
+	height: 0.22rem;
+	background: url(https://imgs.it2048.cn/nsg/m/image/title_des.png) center bottom no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 0.735rem;
+	left: 50%;
+	transform: translate3d(-50%, 0 ,100px);
+	z-index: 100;
+}
+.page_title_feature{
+	width: 3.27rem;
+	height: 0.22rem;
+	background: url(https://imgs.it2048.cn/nsg/m/image/title_feature.png) center bottom no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 0.735rem;
+	left: 50%;
+	transform: translate3d(-50%, 0 ,100px);
+	z-index: 100;
+}
 .page1{
 	background: url(https://imgs.it2048.cn/nsg/m/image/intro/intro_bg.png) center bottom;
 	background-size: cover;
@@ -446,6 +468,7 @@ body,button,input,select,textarea {
 	top: 1.04rem;
 	left: 50%;
 	transform: translate(-50%);
+
 }
 .feature_list .game_box{
   width: 100%;
@@ -511,8 +534,25 @@ body,button,input,select,textarea {
 	color: #fff;
 }      
 
-
-
+@media screen and (max-height: 660px) {
+	.page_title_feature{
+		top: 0.7rem;
+	}
+	.feature_list{
+		top: 1rem;
+	}
+	.feature_title{
+		top: 3.06rem;
+	}
+	.page_wechat_title{
+		top: 4rem;
+	}
+	.wechat_qr{
+		top: 4.28rem;
+		width: 0.9rem;
+		height: 0.9rem;
+	}
+}
 
 
 

@@ -37,6 +37,9 @@ var main = {
 	        		}else {
 	        			$('.arrow_wrap').show();
 	        		}
+	        		if(this.activeIndex == 2){
+	        			self.gameSwiper.slideTo(1);
+	        		}
 	        		$('.nav_item').removeClass('current');
 	        		$('.nav_item').eq(this.activeIndex).addClass('current');
 	            }
@@ -156,29 +159,29 @@ var main = {
         "hero_particle",
         [
             {
-                // 鏉愭枡
+                // 閺夋劖鏋�
                 "type": {
                     "typeName": "image",
 					"url": "https://imgs.it2048.cn/nsg/pc/image/fire/2.png"
                 },
-                // 鏁伴噺
+                // 閺佷即鍣�
                 "number": 8,
-                // 灏哄
+                // 鐏忓搫顕�
                 "size": {
                     "min": 30,
                     "max": 80
                 },
-                // 閫熷害
+                // 闁喎瀹�
                 "speed": {
                     "min": 2,
                     "max": 12
                 },
-                // 鍋忕Щ(杩愬姩)瑙掑害
+                // 閸嬪繒些(鏉╂劕濮�)鐟欐帒瀹�
                 "angle": {
                     "value": 160,
                     "float": 10
                 },
-                // 鏃嬭浆
+                // 閺冨娴�
                 "rota": {
                     "value": 15,
                     "speed": 0.1,
@@ -191,29 +194,29 @@ var main = {
                 },
             },
             {
-                // 鏉愭枡
+                // 閺夋劖鏋�
                 "type": {
                     "typeName": "image",
 					"url": "https://imgs.it2048.cn/nsg/pc/image/fire/1.png"
                 },
-                // 鏁伴噺
+                // 閺佷即鍣�
                 "number": 4,
-                // 灏哄
+                // 鐏忓搫顕�
                 "size": {
                     "min": 60,
                     "max": 80
                 },
-                // 閫熷害
+                // 闁喎瀹�
                 "speed": {
                     "min": 2,
                     "max": 5
                 },
-                // 鍋忕Щ(杩愬姩)瑙掑害
+                // 閸嬪繒些(鏉╂劕濮�)鐟欐帒瀹�
                 "angle": {
                     "value": 160,
                     "float": 5
                 },
-                // 鏃嬭浆
+                // 閺冨娴�
                 "rota": {
                     "value": 10,
                     "speed": 0.1,
@@ -226,29 +229,29 @@ var main = {
                 },
             },
             {
-                // 鏉愭枡
+                // 閺夋劖鏋�
                 "type": {
                     "typeName": "image",
 					"url": "https://imgs.it2048.cn/nsg/pc/image/fire/4.png"
                 },
-                // 鏁伴噺
+                // 閺佷即鍣�
                 "number": 2,
-                // 灏哄
+                // 鐏忓搫顕�
                 "size": {
                     "min": 360,
                     "max": 380
                 },
-                // 閫熷害
+                // 闁喎瀹�
                 "speed": {
                     "min": 5,
                     "max": 7
                 },
-                // 鍋忕Щ(杩愬姩)瑙掑害
+                // 閸嬪繒些(鏉╂劕濮�)鐟欐帒瀹�
                 "angle": {
                     "value": 170,
                     "float": 5
                 },
-                // 鏃嬭浆
+                // 閺冨娴�
                 "rota": {
                     "value": 30,
                     "speed": 0.5,
@@ -261,29 +264,29 @@ var main = {
                 },
             },
             {
-                // 鏉愭枡
+                // 閺夋劖鏋�
                 "type": {
                     "typeName": "image",
 					"url": "https://imgs.it2048.cn/nsg/pc/image/fire/3.png"
                 },
-                // 鏁伴噺
+                // 閺佷即鍣�
                 "number": 6,
-                // 灏哄
+                // 鐏忓搫顕�
                 "size": {
                     "min": 10,
                     "max": 30
                 },
-                // 閫熷害
+                // 闁喎瀹�
                 "speed": {
                     "min": 2,
                     "max": 4
                 },
-                // 鍋忕Щ(杩愬姩)瑙掑害
+                // 閸嬪繒些(鏉╂劕濮�)鐟欐帒瀹�
                 "angle": {
                     "value": 160,
                     "float": 10
                 },
-                // 鏃嬭浆
+                // 閺冨娴�
                 "rota": {
                     "value": 3,
                     "speed": 0.1,
@@ -316,6 +319,5 @@ var main = {
 	}
 }
 main.init();
-
 
 
