@@ -173,7 +173,7 @@ body,button,input,select,textarea {
 	float: right;
 	width: 1.22rem;
 	height: 0.35rem;
-	background: url(https://imgs.it2048.cn/nsg/m/image/download_btn_small.png) no-repeat;
+	background: url(http://nsgweb.bigkraken.com/res/m/image/download_btn_small.png) no-repeat;
 	background-size: cover;
 	margin-top: 0.05rem;
 }
@@ -210,7 +210,7 @@ body,button,input,select,textarea {
 	width: 3.27rem;
 	height: 0.25rem;
 	line-height: 0.25rem;
-	background: url(https://imgs.it2048.cn/nsg/m/image/page_title.png) center bottom no-repeat;
+	background: url(http://nsgweb.bigkraken.com/res/m/image/page_title.png) center bottom no-repeat;
 	background-size: contain;
 	text-align: center;
 	position: absolute;
@@ -232,7 +232,7 @@ body,button,input,select,textarea {
 .page_title_des{
 	width: 3.27rem;
 	height: 0.22rem;
-	background: url(https://imgs.it2048.cn/nsg/m/image/title_des.png) center bottom no-repeat;
+	background: url(http://nsgweb.bigkraken.com/res/m/image/title_des.png) center bottom no-repeat;
 	background-size: contain;
 	position: absolute;
 	top: 0.735rem;
@@ -243,7 +243,7 @@ body,button,input,select,textarea {
 .page_title_feature{
 	width: 3.27rem;
 	height: 0.22rem;
-	background: url(https://imgs.it2048.cn/nsg/m/image/title_feature.png) center bottom no-repeat;
+	background: url(http://nsgweb.bigkraken.com/res/m/image/title_feature.png) center bottom no-repeat;
 	background-size: contain;
 	position: absolute;
 	top: 0.735rem;
@@ -252,7 +252,7 @@ body,button,input,select,textarea {
 	z-index: 100;
 }
 .page1{
-	background: url(https://imgs.it2048.cn/nsg/m/image/intro/intro_bg.png) center bottom;
+	background: url(http://nsgweb.bigkraken.com/res/m/image/intro/intro_bg.png) center bottom;
 	background-size: cover;
 }
 .page1 .logo{
@@ -266,7 +266,7 @@ body,button,input,select,textarea {
 	display: block;
 	width: 2.67rem;
 	height: 0.505rem;
-	background: url(https://imgs.it2048.cn/nsg/m/image/download_btn.png) center;
+	background: url(http://nsgweb.bigkraken.com/res/m/image/download_btn.png) center;
 	background-size: contain;
 	position: absolute;
 	left: 50%;
@@ -282,7 +282,7 @@ body,button,input,select,textarea {
 
 .page_content .hero_head_wrap{
   position: absolute;
-  /*background: url(https://imgs.it2048.cn/nsg/m/image/head_bg.png) center bottom no-repeat;*/
+  /*background: url(http://nsgweb.bigkraken.com/res/m/image/head_bg.png) center bottom no-repeat;*/
   /*background-size: contain;*/
   width: 100%;
   height: 0.7rem;
@@ -325,7 +325,7 @@ body,button,input,select,textarea {
   height: 0.615rem;
 }
 .hero_head_list .head_item.swiper-slide-active .hero_avtor{
-  background: url(https://imgs.it2048.cn/nsg/m/image/head_active.png) center no-repeat;
+  background: url(http://nsgweb.bigkraken.com/res/m/image/head_active.png) center no-repeat;
   background-size: contain;
   border: 0;
   display: flex;
@@ -354,7 +354,7 @@ body,button,input,select,textarea {
 }
 .hero_bottom{
 	position: absolute;
-    background: url(https://imgs.it2048.cn/nsg/m/image/head_bg.png) center bottom no-repeat;
+    background: url(http://nsgweb.bigkraken.com/res/m/image/head_bg.png) center bottom no-repeat;
     background-size: contain;
     width: 100%;
     height: 0.7rem;
@@ -391,7 +391,7 @@ body,button,input,select,textarea {
 	left: 0.675rem;
 	/*top: 2.3rem;*/
 	bottom: 0.185rem;
-	background: url(https://imgs.it2048.cn/nsg/m/image/heroimage/hero0.png) center no-repeat;
+	background: url(http://nsgweb.bigkraken.com/res/m/image/heroimage/hero0.png) center no-repeat;
   	background-size: contain;
 }
 #hero_1{
@@ -400,7 +400,7 @@ body,button,input,select,textarea {
     left: 0.5rem;
     /*top: 1.93rem;*/
     bottom: 0.185rem;
-    background: url(https://imgs.it2048.cn/nsg/m/image/heroimage/hero1.png) center no-repeat;
+    background: url(http://nsgweb.bigkraken.com/res/m/image/heroimage/hero1.png) center no-repeat;
   	background-size: contain;
 }
 #hero_2{
@@ -409,7 +409,7 @@ body,button,input,select,textarea {
 	left: 0.85rem;
 	/*top: 2.08rem;*/
 	bottom: 0.185rem;
-	background: url(https://imgs.it2048.cn/nsg/m/image/heroimage/hero2.png) center no-repeat;
+	background: url(http://nsgweb.bigkraken.com/res/m/image/heroimage/hero2.png) center no-repeat;
   	background-size: contain;
 }
 #hero_3{
@@ -418,7 +418,25 @@ body,button,input,select,textarea {
     left: -0.855rem;
     /*top: 1.59rem;*/
     bottom: 0.185rem;
-    background: url(https://imgs.it2048.cn/nsg/m/image/heroimage/hero3.png) center no-repeat;
+    background: url(http://nsgweb.bigkraken.com/res/m/image/heroimage/hero3.png) center no-repeat;
+  	background-size: contain;
+}
+#hero_4{
+	width: 2.025rem;
+    height: 4.555rem;
+    left: 0.8rem;
+    /*top: 1.59rem;*/
+    bottom: 0.2rem;
+    background: url(http://nsgweb.bigkraken.com/res/m/image/heroimage/hero4.png) center no-repeat;
+  	background-size: contain;
+}
+#hero_5{
+	width: 5.865rem;
+    height: 4.71rem;
+    left: -0.855rem;
+    /*top: 1.59rem;*/
+    bottom: 0.2rem;
+    background: url(http://nsgweb.bigkraken.com/res/m/image/heroimage/hero5.png) center no-repeat;
   	background-size: contain;
 }
 .hero_video{
@@ -432,30 +450,42 @@ body,button,input,select,textarea {
 }
 .page2 .page_content .hero_list .hero_0{
   height: 100%;
-  background: url('https://imgs.it2048.cn/nsg/m/image/hero/bg1.png');
+  background: url('http://nsgweb.bigkraken.com/res/m/image/hero/bg1.png');
   background-size: cover;
   background-position: center bottom;
 }
 .page2 .page_content .hero_list .hero_1{
   height: 100%;
-  background: url('https://imgs.it2048.cn/nsg/m/image/hero/bg2.png');
+  background: url('http://nsgweb.bigkraken.com/res/m/image/hero/bg2.png');
   background-size: cover;
   background-position: center bottom;
 }
 .page2 .page_content .hero_list .hero_2{
   height: 100%;
-  background: url('https://imgs.it2048.cn/nsg/m/image/hero/bg3.png');
+  background: url('http://nsgweb.bigkraken.com/res/m/image/hero/bg3.png');
   background-size: cover;
   background-position: center bottom;
 }
 .page2 .page_content .hero_list .hero_3{
   height: 100%;
-  background: url('https://imgs.it2048.cn/nsg/m/image/hero/bg4.png');
+  background: url('http://nsgweb.bigkraken.com/res/m/image/hero/bg4.png');
+  background-size: cover;
+  background-position: center bottom;
+}
+.page2 .page_content .hero_list .hero_4{
+  height: 100%;
+  background: url('http://nsgweb.bigkraken.com/res/m/image/hero/bg5.png');
+  background-size: cover;
+  background-position: center bottom;
+}
+.page2 .page_content .hero_list .hero_5{
+  height: 100%;
+  background: url('http://nsgweb.bigkraken.com/res/m/image/hero/bg6.png');
   background-size: cover;
   background-position: center bottom;
 }
 .page3{
-	background: url(https://imgs.it2048.cn/nsg/m/image/feature_bg.png) center bottom;
+	background: url(http://nsgweb.bigkraken.com/res/m/image/feature_bg.png) center bottom;
 	background-size: cover;
 }
 .feature_list{
@@ -494,7 +524,7 @@ body,button,input,select,textarea {
 	font-family: JDJZONGYI;
 	width: 0.29rem;
 	height: 0.89rem;
-	background: url(https://imgs.it2048.cn/nsg/m/image/feature_title_bg.png) center;
+	background: url(http://nsgweb.bigkraken.com/res/m/image/feature_title_bg.png) center;
 	background-size: cover;
 	font-size: 0.12rem;
 	color: #a7b2ed;
@@ -505,7 +535,7 @@ body,button,input,select,textarea {
 	word-break: break-all;
 }
 .feature_title_item.active{
-	background: url(https://imgs.it2048.cn/nsg/m/image/feature_title_active_bg.png) center;
+	background: url(http://nsgweb.bigkraken.com/res/m/image/feature_title_active_bg.png) center;
 	background-size: cover;
 	color: #fff;
 }
@@ -553,6 +583,7 @@ body,button,input,select,textarea {
 		height: 0.9rem;
 	}
 }
+
 
 
 

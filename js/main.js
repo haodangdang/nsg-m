@@ -16,7 +16,7 @@ var main = {
 		var u = navigator.userAgent,
 			isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
 		if(!isiOS){
-			$('.app_download, .download').attr('href', './download.html');
+			$('.app_download, .download').attr('href', 'http://nsg.bigkraken.com/download.html?v='+new Date().getTime());
 		}else{
 			$('.app_download, .download').attr('href', 'javascript:void(0)');
 		}
@@ -58,7 +58,7 @@ var main = {
 		}
 		
 		var data = {
-		    src: 'https://imgs.it2048.cn/nsg/common/gamevideo/video'+index+'.mp4',
+		    src: 'http://nsgweb.bigkraken.com/res/common/gamevideo/video'+index+'.mp4',
 		    type: 'video/mp4'
 		};
 		self.gameVideo.pause();
@@ -159,29 +159,29 @@ var main = {
         "hero_particle",
         [
             {
-                // 閺夋劖鏋�
+                // 鏉愭枡
                 "type": {
                     "typeName": "image",
-					"url": "https://imgs.it2048.cn/nsg/pc/image/fire/2.png"
+					"url": "http://nsgweb.bigkraken.com/res/pc/image/fire/2.png"
                 },
-                // 閺佷即鍣�
+                // 鏁伴噺
                 "number": 8,
-                // 鐏忓搫顕�
+                // 灏哄
                 "size": {
                     "min": 30,
                     "max": 80
                 },
-                // 闁喎瀹�
+                // 閫熷害
                 "speed": {
                     "min": 2,
                     "max": 12
                 },
-                // 閸嬪繒些(鏉╂劕濮�)鐟欐帒瀹�
+                // 鍋忕Щ(杩愬姩)瑙掑害
                 "angle": {
                     "value": 160,
                     "float": 10
                 },
-                // 閺冨娴�
+                // 鏃嬭浆
                 "rota": {
                     "value": 15,
                     "speed": 0.1,
@@ -194,29 +194,29 @@ var main = {
                 },
             },
             {
-                // 閺夋劖鏋�
+                // 鏉愭枡
                 "type": {
                     "typeName": "image",
-					"url": "https://imgs.it2048.cn/nsg/pc/image/fire/1.png"
+					"url": "http://nsgweb.bigkraken.com/res/pc/image/fire/1.png"
                 },
-                // 閺佷即鍣�
+                // 鏁伴噺
                 "number": 4,
-                // 鐏忓搫顕�
+                // 灏哄
                 "size": {
                     "min": 60,
                     "max": 80
                 },
-                // 闁喎瀹�
+                // 閫熷害
                 "speed": {
                     "min": 2,
                     "max": 5
                 },
-                // 閸嬪繒些(鏉╂劕濮�)鐟欐帒瀹�
+                // 鍋忕Щ(杩愬姩)瑙掑害
                 "angle": {
                     "value": 160,
                     "float": 5
                 },
-                // 閺冨娴�
+                // 鏃嬭浆
                 "rota": {
                     "value": 10,
                     "speed": 0.1,
@@ -229,29 +229,29 @@ var main = {
                 },
             },
             {
-                // 閺夋劖鏋�
+                // 鏉愭枡
                 "type": {
                     "typeName": "image",
-					"url": "https://imgs.it2048.cn/nsg/pc/image/fire/4.png"
+					"url": "http://nsgweb.bigkraken.com/res/pc/image/fire/4.png"
                 },
-                // 閺佷即鍣�
+                // 鏁伴噺
                 "number": 2,
-                // 鐏忓搫顕�
+                // 灏哄
                 "size": {
                     "min": 360,
                     "max": 380
                 },
-                // 闁喎瀹�
+                // 閫熷害
                 "speed": {
                     "min": 5,
                     "max": 7
                 },
-                // 閸嬪繒些(鏉╂劕濮�)鐟欐帒瀹�
+                // 鍋忕Щ(杩愬姩)瑙掑害
                 "angle": {
                     "value": 170,
                     "float": 5
                 },
-                // 閺冨娴�
+                // 鏃嬭浆
                 "rota": {
                     "value": 30,
                     "speed": 0.5,
@@ -264,29 +264,29 @@ var main = {
                 },
             },
             {
-                // 閺夋劖鏋�
+                // 鏉愭枡
                 "type": {
                     "typeName": "image",
-					"url": "https://imgs.it2048.cn/nsg/pc/image/fire/3.png"
+					"url": "http://nsgweb.bigkraken.com/res/pc/image/fire/3.png"
                 },
-                // 閺佷即鍣�
+                // 鏁伴噺
                 "number": 6,
-                // 鐏忓搫顕�
+                // 灏哄
                 "size": {
                     "min": 10,
                     "max": 30
                 },
-                // 闁喎瀹�
+                // 閫熷害
                 "speed": {
                     "min": 2,
                     "max": 4
                 },
-                // 閸嬪繒些(鏉╂劕濮�)鐟欐帒瀹�
+                // 鍋忕Щ(杩愬姩)瑙掑害
                 "angle": {
                     "value": 160,
                     "float": 10
                 },
-                // 閺冨娴�
+                // 鏃嬭浆
                 "rota": {
                     "value": 3,
                     "speed": 0.1,
@@ -319,5 +319,6 @@ var main = {
 	}
 }
 main.init();
+
 
 
